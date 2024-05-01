@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Largest Numebr among three numbers</h1>
+    <input type="number" placeholder="Enter number 1"  id="num1">
+    <input type="number" placeholder="Enter number 2" required id="num2">
+    <input type="number" placeholder="Enter number 3" required id="num3">
+    <button onclick="compare()" id="comp"> compare</button>
+</body>
+<script>
+    function compare(){
+    let obj1=parseInt(document.getElementById("num1").value);
+    let obj2=parseInt(document.getElementById("num2").value);
+    let obj3=parseInt(document.getElementById("num3").value);
+    if(obj1>obj2&&obj2>obj3){
+        document.write("Descrasing Order");
+    }
+    else if(obj1<obj2&&obj2<obj3){
+        document.write("Increasing order");
+    }
+    else{
+        document.write("Neither increasing neither decreasing")
+    }
+    }
+</script>
+</html>

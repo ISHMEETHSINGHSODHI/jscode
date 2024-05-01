@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DayName</h1>
+    <input type="number" placeholder="Enter number 1"  id="num1">
+    <h4 id="res">DayName</h4>
+    <button onclick="day()" id="comp"> Day</button>
+</body>
+<script>
+    let obj=document.getElementById("res");
+    function day(){
+    let obj1=parseInt(document.getElementById("num1").value);
+    if(obj1==1){
+        obj.innerHTML="Sunday";
+    }
+    else if(obj1==2){
+        obj.innerHTML="Monday";
+    }
+    else if(obj1==3){
+        obj.innerHTML="Tuesday";
+    }
+    else if(obj1==4){
+        obj.innerHTML="Wednesday";
+    }
+    else if(obj1==5){
+        obj.innerHTML="Thursday";
+    }
+    else if(obj1==6){
+        obj.innerHTML="friday";
+    }
+    else if(obj1==7){
+        obj.innerHTML="Saturday";
+    }
+    else{
+        obj.innerHTML="Invalid choice"
+    }}
+</script>
+</html>

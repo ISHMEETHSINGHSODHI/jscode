@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="" id="num" placeholder="enter number">
+    <button onclick="rev()">display</button>
+    <script>
+        function rev()
+        {
+            let revnum=0;
+            let n=null;
+            
+        let obj=document.getElementById("num").value;
+        while(obj>0){
+            n=obj%10;
+            revnum=revnum*10+n;
+            obj=Math.floor(obj/10);
+        }
+        document.write(revnum)
+        }
+    </script>
+</body>
+</html>

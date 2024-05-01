@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="enter float number" id="inp">
+    
+    <button onclick="result()">Display </button>
+    <h4 id="res">Result</h4>
+    <script>
+        let res=document.getElementById("res");
+        function result(){
+            let inp=parseFloat(document.getElementById("inp").value);
+            if(inp==0){
+                res.innerHTML="Zero";
+            }
+            else{
+                if(inp>0){
+                    res.innerHTML="Positive";
+                }
+                else{
+                    res.innerHTML="Negative";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="" id="num" placeholder="enter number">
+    <button onclick="sumul()">display</button>
+    <script>
+        
+    function sumul(){
+        let sum=0;
+        let mul=1;
+        let val=document.getElementById("num").value;
+        document.write("The Number is: "+val+"<br>")
+        while(val>0){
+            let n=val;
+            val=val%10;
+            sum=sum+val;
+            mul=mul*val;
+            val=Math.floor(n/10);
+            console.log(n);
+        }
+        document.write("Sum is"+sum+"<br>");
+        document.write("multipliction is:<br>"+mul);
+    }
+    </script>
+</body>
+</html>

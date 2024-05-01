@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Even odd</h1>
+    <input type="number" placeholder="enter number" id="num">
+    <button onclick="rest()">Display</button>
+    <h4 id="result">Result</h4>
+    <script>
+        
+        let res=document.getElementById("result");
+        
+        function rest(){
+        let inpt=parseInt(document.getElementById("num").value);//to get the latest value from input box,this statement is written in the function
+        if(inpt%2==0){
+            res.innerHTML="Even";
+            console.log("even")
+            // document.write("Even")
+        }
+        else{
+            console.log("Odd");
+            res.innerHTML="odd";
+        }}
+    //    let inp= prompt("Enter Number");
+    //    if(inp%2==0){
+    //     document.write("Even");
+    //    }
+    //    else{
+    //     document.write("odd")
+    //    }
+
+    </script>
+</body>
+</html>
